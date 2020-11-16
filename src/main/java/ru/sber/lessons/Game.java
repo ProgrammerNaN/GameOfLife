@@ -24,6 +24,8 @@ public class Game {
 
     public Game(int[][] board) {
         this.board = board;
+        this.width = board[0].length;
+        this.height = board.length;
     }
 
     private void initBoard() {

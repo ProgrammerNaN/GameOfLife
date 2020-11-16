@@ -8,11 +8,16 @@ public class MainController {
     private static final int HEIGHT = 10;
 
     private static final int[][] BOARD = {
-        {0, 0, 0, 0, 0},
-        {0, 1, 1, 1, 0},
-        {0, 0, 1, 0, 0},
-        {0, 1, 1, 0, 0},
-        {0, 0, 0, 0, 0}
+            {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
+            {0, 1, 0, 1, 0, 0, 0, 0, 0, 0},
+            {0, 0, 1, 1, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
     };
 
     private View view;
@@ -24,7 +29,8 @@ public class MainController {
     }
 
     public static void main(String[] args) {
-        Game game = new Game(WIDTH, HEIGHT);
+        //Game game = new Game(WIDTH, HEIGHT);
+        Game game = new Game(BOARD);
         View view = new ConsoleView();
 
         MainController controller = new MainController(view, game);
